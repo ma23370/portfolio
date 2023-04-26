@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/riset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.2.2/pixi.min.js"></script>
+    <title>portfolio</title>
+</head>
+<body>
+    <div id="container">
+        <header id="header">
+            <a href="#" class="title">
+                    Portfolio<svg width="30" height="4" viewBox="0 0 30 4" fill="none" xmlns="http://www.w3.org/2000/svg" class="ttl_no">
+                    <path d="M1 2C3.24 0.666667 5.10667 0.666667 6.6 2C8.09333 3.33333 9.96 3.33333 12.2 2C14.44 0.666667 16.3067 0.666667 17.8 2C19.2933 3.33333 21.16 3.33333 23.4 2C25.64 0.666667 27.5067 0.666667 29 2" stroke="black"/>
+                    </svg>
+                </a>
+                <a href="#">Work</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+        </header>
+        
+        <div class="openbtn1"><span></span><span></span><span></span></div>
+        <nav id="g-nav">
+            <div id="g-nav-list">
+                <ul>
+                    <li><a href="#">Top</a></li>  
+                    <li><a href="#">About</a></li>  
+                    <li><a href="#">Work</a></li>  
+                    <li><a href="#">Contact</a></li>  
+                </ul>
+                <img src="top_img/top_menu_neko.svg" alt="猫のイラスト">
+            </div>
+        </nav>
+
+        <section id="visual">
+            <svg viewbox="-155 0 300 300" width="100%" height="290" class="top_svg">
+                <defs>
+                    <filter id="roughFilter" filterUnits="objectBoundingBox" x="0" y="0" width="110%" height="110%">
+                        <feTurbulence type="turbulence" baseFrequency="0.001 0.01" numOctaves="5" seed="1" sttlchTiles="sttlch">
+                            <animate
+                                attributeName="seed"
+                                from="1"
+                                to="100"
+                                dur="10s"
+                                repeatCount="indefinite"
+                            />
+                        </feTurbulence>
+                        <feDisplacementMap in="SourceGraphic" scale="10"/>
+                    </filter>
+                </defs>
+                <image href="top_img/top_cat.svg" filter="url(#roughFilter)" transform="translate(-100 100)" width="200" height="200" />
+            </svg>
+            <h1 class="portfolio">
+                Portfolio<svg width="52" height="30" viewBox="0 0 30 5" fill="none" xmlns="http://www.w3.org/2000/svg" class="ttl_no">
+                    <path d="M1 2C3.24 0.666667 5.10667 0.666667 6.6 2C8.09333 3.33333 9.96 3.33333 12.2 2C14.44 0.666667 16.3067 0.666667 17.8 2C19.2933 3.33333 21.16 3.33333 23.4 2C25.64 0.666667 27.5067 0.666667 29 2" stroke="black"/>
+                    </svg>
+            </h1>
+        </section>
+    </div>
+
+    <section id="work">
+        <h2>Work</h2>
+        <div class="readmore">
+            <input id="check1" class="readmore-check" type="checkbox">
+            <div class="work_wrap readmore-content">
+                <a href="himawari.html">
+                    <div class="work_wrap2">
+                        <img src="top_img/himawari.png" alt="作品のサムネ">
+                        <p class="saito">Webサイト</p>
+                        <p class="Work_txt">進級制作「フローリストひまわり」</p>
+                    </div>
+                </a>
+                <a href="saiyou.html">
+                    <div class="work_wrap2">
+                        <img src="top_img/lig.png" alt="作品のサムネ">
+                        <p class="saito">Webサイト</p>
+                        <p class="Work_txt">LIG採用サイト</p>
+                    </div>
+                </a>
+                <a href="sumabo.html">
+                    <div id="work_sumabo">
+                        <div class="work_wrap2">
+                            <img src="top_img/yurukyara.png" alt="作品のサムネ">
+                            <p class="saito">Webサイト</p>
+                            <p class="Work_txt">ゆるキャラサイト「すまぼう」</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="work_wrap2">
+                    <img src="top_img/zikosyokai.png" alt="作品のサムネ">
+                    <p class="saito">Webサイト</p>
+                    <p class="Work_txt">自己紹介サイト</p>
+                </div>
+                <div class="work_wrap2">
+                    <img src="top_img/artist.png" alt="作品のサムネ">
+                    <p class="design">Webデザイン</p>
+                    <p class="Work_txt">お気に入りアーティストサイト</p>
+                </div>
+                <div class="work_wrap2">
+                    <img src="top_img/poster.png" alt="作品のサムネ">
+                    <p class="graphic">グラフィック</p>
+                    <p class="Work_txt">ポスター制作「アートと人」</p>
+                </div>
+                <div id="work_calendar">
+                    <div class="work_wrap2">
+                        <img src="top_img/calendar.png" alt="作品のサムネ">
+                        <p class="graphic">グラフィック</p>
+                        <p class="Work_txt">2023カレンダー制作</p>
+                    </div>
+                </div>
+                <div class="work_wrap2">
+                    <img src="top_img/beer.png" alt="作品のサムネ">
+                    <p class="graphic">グラフィック</p>
+                    <p class="Work_txt">クラフトビールのロゴ制作</p>
+                </div>
+                <div class="work_wrap2">
+                    <img src="top_img/gion.png" alt="作品のサムネ">
+                    <p class="graphic">グラフィック</p>
+                    <p class="Work_txt">水の擬音デザイン</p>
+                </div>
+                <div class="work_wrap2">
+                    <img src="top_img/logo.png" alt="作品のサムネ">
+                    <p class="graphic">グラフィック</p>
+                    <p class="Work_txt">オリジナルはちみつロゴ制作</p>
+                </div>
+            </div>
+            <label class="readmore-label" for="check1"></label>
+        </div>
+    </section>
+    
+    <section id="about">
+        <div class="about_ttl">
+            <h2>About</h2>
+        </div>  
+        <div class="me_bg">
+            <div class="me">
+                <div class="me_txt">
+                    <p class="name">清水 麻由</p>
+                        <p class="name_txt">身につけたスキルでいろんな人の役に立てる、プラスになるようなデザインを制作することを目指しています。グラフィックや造形など様々なデザインに触れることが好きで、イラストを描くことも好きです。デザインに取り入れたり、趣味を詰め込んだ絵などもよく描きます。</p>
+                </div>
+                <img src="top_img/top_zibun.png" alt="清水麻由の写真" class="me_pic">
+            </div>
+        </div>
+        <div class="about_flex">
+            <div class="about_more">
+                <div class="about_wrap1">
+                    <div class="about_wrap">
+                        <p class="more_ttl">School</p>
+                        <p class="more_txt">神戸電子専門学校グラフィックデザイン学科/WEBコース</p>
+                    </div>
+                    <div class="about_wrap">
+                        <p class="more_ttl">Birthday</p>
+                        <p class="more_txt">2004/02/06</p>
+                    </div>
+                    <div class="about_wrap">
+                        <p class="more_ttl">Aspiring</p>
+                        <p class="more_txt">デザイナー/WEBデザイナー</p>
+                    </div>
+                </div>
+                <div class="about_wrap2">
+                    <p class="more_ttl">Certification</p>
+                    <div class="about_more2">
+                        <p class="more_txt">
+                            2019.7.7<br>
+                            2019.7.12<br>
+                            2019.12.8<br>
+                            2020.10.2<br>
+                            2020.11.28<br>
+                            2021.2.5<br>
+                            2021.7.16<br>
+                            2021.7.30</p>
+                        <p class="more_txt">日本語ワープロ検定 準２級<br>
+                            レタリング技能検定 ３級<br>
+                            情報処理技能検定 ３級<br>
+                            基礎製図検定<br>
+                            トレース技能検定 ２級<br>
+                            グラフィックデザイン検定 ２級<br>
+                            機械製図検定<br>
+                            初級CAD検定
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="about_more_cat">
+                <div class="about_neko">
+                    <p class="neko_txt">イラストを見てみる<svg width="7" height="9" viewBox="0 0 7 9" fill="none" xmlns="http://www.w3.org/2000/svg" class="neko_sankaku">
+                        <path d="M0.683478 1.37297L5.27542 4.28925L0.683478 7.20552L0.683478 1.37297Z" fill="white" stroke="black"/>
+                        </svg>
+                        </p>
+                    <img src="top_img/top_neko.svg" alt="猫のイラスト" class="neko_img">
+                </div>
+                <div class="about_neko">
+                    <p class="neko_txt">レポートを見てみる<svg width="7" height="9" viewBox="0 0 7 9" fill="none" xmlns="http://www.w3.org/2000/svg" class="neko_sankaku">
+                        <path d="M0.683478 1.37297L5.27542 4.28925L0.683478 7.20552L0.683478 1.37297Z" fill="white" stroke="black"/>
+                        </svg>
+                        </p>
+                    <img src="top_img/top_neko2.svg" alt="猫のイラスト" class="neko_img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p class="footer_txt">©️2023 Shimizu Mayu</p>
+        <a href="#">
+            <p class="top_img"><img src="top_img/top_top.svg" alt="トップに戻るイラスト" class="top_top_img"></p>
+        </a>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
